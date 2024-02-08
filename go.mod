@@ -2,8 +2,6 @@ module github.com/Nmishin/terraform-provider-dodo
 
 go 1.21.4
 
-replace github.com/Nmishin/dodo-go => /Users/nmishin/terraform-providers/dodo-go
-
 require (
 	github.com/Nmishin/dodo-go v0.0.1
 	github.com/agext/levenshtein v1.2.3 // indirect
