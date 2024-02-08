@@ -1,3 +1,5 @@
+github.com/Nmishin/dodo-go v0.0.1 h1:K+ucd8ZpFzmSuqncNqKxGgQbGu+bsFCY+efSYVSpMog=
+github.com/Nmishin/dodo-go v0.0.1/go.mod h1:3Hm5M9hsoyJ+mvUo2aCEUF4XDDnNlBWei+Rf7ZabfIA=
 github.com/agext/levenshtein v1.2.3 h1:YB2fHEn0UJagG8T1rrWknE3ZQzWM06O8AMAatNn7lmo=
 github.com/agext/levenshtein v1.2.3/go.mod h1:JEDfjyjHDjOF/1e4FlBE/PkbqA9OfWu2ki2W0IB5558=
 github.com/antihax/optional v1.0.0 h1:xK2lYat7ZLaVVcIuj82J8kIro4V6kDe0AUDFboUCwcg=
