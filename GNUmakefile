@@ -1,6 +1,6 @@
 TEST?=$$(go list ./...)
 GOFMT_FILES?=$$(find . -name '*.go')
-PKG_NAME=cloudflare
+PKG_NAME=dodo
 VERSION?=$(shell git describe --tags --always)
 DEV_VERSION=99.0.0
 DODO_GO_VERSION?=master
