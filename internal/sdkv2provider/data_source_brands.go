@@ -3,8 +3,6 @@ package sdkv2provider
 import (
 	"context"
 	"fmt"
-	"time"
-	"strconv"
 
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
@@ -21,7 +19,7 @@ func dataSourceDodoBrands() *schema.Resource {
 				Elem: &schema.Schema{
 					Type: schema.TypeString,
 				},
-				Computed:    true,
+				Computed: true,
 			},
 		},
 	}
@@ -47,7 +45,7 @@ func dataSourceDodoBrandsRead(ctx context.Context, d *schema.ResourceData, meta 
 		return diag.FromErr(fmt.Errorf("error setting matched brands: %w", err))
 	}
 
-	d.SetId(strconv.FormatInt(time.Now().Unix(), 10))
+	d.SetId(stringListChecksum(brandNames))
 
 	return diags
 }

@@ -24,10 +24,7 @@ require (
 	golang.org/x/text v0.14.0 // indirect
 )
 
-require (
-	github.com/MakeNowJust/heredoc/v2 v2.0.1
-	github.com/hashicorp/terraform-plugin-log v0.9.0
-)
+require github.com/hashicorp/terraform-plugin-log v0.9.0
 
 require (
 	github.com/antihax/optional v1.0.0 // indirect
