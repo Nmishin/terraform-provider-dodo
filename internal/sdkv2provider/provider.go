@@ -32,7 +32,7 @@ func Provider(version string, testing bool) *schema.Provider {
 			"url": {
 				Type:        schema.TypeString,
 				Required:    true,
-				Description: fmt.Sprintf("The API Token for operations."),
+				Description: "The Dodo Global API endpoint, can optionally be passed as `DODO_BASE_URL` environmental variable",
 				DefaultFunc: schema.EnvDefaultFunc("DODO_BASE_URL", "https://globalapi.dodopizza.com"),
 			},
 		},
