@@ -14,7 +14,7 @@ if [ "$(git status --porcelain "${exclude_files[@]}")" ]; then
 fi
 
 $(go env GOPATH)/bin/tfplugindocs generate\
-  -rendered-provider-name "Cloudflare"
+  -rendered-provider-name "Dodo"
 
 # Remove the changes to files we don't autogenerate
 git checkout HEAD -- "${exclude_files[@]}"
