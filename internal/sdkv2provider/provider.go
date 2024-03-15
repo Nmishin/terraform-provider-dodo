@@ -37,7 +37,8 @@ func Provider(version string, testing bool) *schema.Provider {
 			},
 		},
 		DataSourcesMap: map[string]*schema.Resource{
-			"dodo_brand": dataSourceDodoBrands(),
+			"dodo_brand":    dataSourceDodoBrands(),
+			"dodo_contries": dataSourceDodoCountries(),
 		},
 		ResourcesMap:         map[string]*schema.Resource{},
 		ConfigureContextFunc: providerConfigure(version, testing),
