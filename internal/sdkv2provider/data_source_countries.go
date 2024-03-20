@@ -16,8 +16,9 @@ func dataSourceDodoCountries() *schema.Resource {
 
 		Schema: map[string]*schema.Schema{
 			"brand": {
-				Type:     schema.TypeString,
-				Required: true,
+				Type:        schema.TypeString,
+				Required:    true,
+				Description: "A brand name to search for.",
 			},
 			"countries": {
 				Type:        schema.TypeList,
@@ -26,20 +27,24 @@ func dataSourceDodoCountries() *schema.Resource {
 				Elem: &schema.Resource{
 					Schema: map[string]*schema.Schema{
 						"id": {
-							Type:     schema.TypeInt,
-							Computed: true,
+							Type:        schema.TypeInt,
+							Computed:    true,
+							Description: "The country id.",
 						},
 						"code": {
-							Type:     schema.TypeString,
-							Computed: true,
+							Type:        schema.TypeString,
+							Computed:    true,
+							Description: "The country code.",
 						},
 						"name": {
-							Type:     schema.TypeString,
-							Computed: true,
+							Type:        schema.TypeString,
+							Computed:    true,
+							Description: "The country name.",
 						},
 						"currency": {
-							Type:     schema.TypeString,
-							Computed: true,
+							Type:        schema.TypeString,
+							Computed:    true,
+							Description: "The country currency",
 						},
 					},
 				},
