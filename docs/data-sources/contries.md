@@ -17,7 +17,7 @@ description: |-
 
 ### Required
 
-- `brand` (String)
+- `brand` (String) A brand name to search for.
 
 ### Read-Only
 
