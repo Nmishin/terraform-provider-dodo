@@ -1,18 +1,19 @@
 Terraform Provider Dodo Pizza
 =============================
 
-This repository contains a sample Terraform provider. Can be used for learning purpose.
-This is fully working solution. Used [dodo-go](https://github.com/Nmishin/dodo-go) client library for iteract with [Dodo Global API v2](https://globalapi.dodopizza.com/api/index.html?urls.primaryName=Dodo%20Global%20API%20v2).
+This repository contains a sample Terraform provider. Can be used for learning purposes.
+It is a fully working solution. Uses [dodo-go](https://github.com/Nmishin/dodo-go) client library to interact with the [Dodo Global API v2](https://globalapi.dodopizza.com/api/index.html?urls.primaryName=Dodo%20Global%20API%20v2).
 
-For more info about how to write custom terraform provider, please check out my article:
+For more information about how to write a custom terraform provider, please check out my article:
 [My Path for Terraform Provider Creation](https://hackernoon.com/my-path-for-terraform-provider-creation)
 
-This terraform provider available for both repositories: terraform and opentofu.
+This terraform provider is available for both repositories: terraform and opentofu.
 
 Using the Provider
 ------------------
-`cat provider.tf`
 ```tcl
+cat provider.tf
+
 terraform {
   required_providers {
     dodo = {
@@ -25,13 +26,15 @@ terraform {
 provider "dodo" {}
 ```
 
-`cat main.tf`
 ```tcl
+cat main.tf
+
 data "dodo_brand" "test" {}
 ```
 
-`cat outputs.tf`
 ```tcl
+cat outputs.tf
+
 output "brands" {
   value = data.dodo_brand.test.names
 }
