@@ -4,8 +4,10 @@ Terraform Provider Dodo Pizza
 This repository contains a sample Terraform provider. Can be used for learning purposes.
 It is a fully working solution. Uses [dodo-go](https://github.com/Nmishin/dodo-go) client library to interact with the [Dodo Global API v2](https://globalapi.dodopizza.com/api/index.html?urls.primaryName=Dodo%20Global%20API%20v2).
 
-For more information about how to write a custom terraform provider, please check out my article:
-[My Path for Terraform Provider Creation](https://hackernoon.com/my-path-for-terraform-provider-creation)
+
+__For more information about how to write a custom terraform provider, please check out my article:
+<br>[My Path for Terraform Provider Creation](https://hackernoon.com/my-path-for-terraform-provider-creation)__
+
 
 This terraform provider is available for both repositories: terraform and opentofu.
 
