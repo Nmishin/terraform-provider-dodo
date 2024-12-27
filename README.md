@@ -20,7 +20,7 @@ terraform {
   required_providers {
     dodo = {
       source = "Nmishin/dodo"
-      version = "0.0.1"
+      version = "0.0.3"
     }
   }
 }
