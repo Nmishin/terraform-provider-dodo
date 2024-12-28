@@ -1,7 +1,8 @@
 module github.com/Nmishin/terraform-provider-dodo
 
-go 1.21.4
-toolchain go1.22.9
+go 1.22.7
+
+toolchain go1.23.3
 
 require (
 	github.com/Nmishin/dodo-go v0.0.1
@@ -20,7 +21,7 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/zclconf/go-cty v1.15.0 // indirect
-	golang.org/x/net v0.28.0 // indirect
+	golang.org/x/net v0.33.0 // indirect
 	golang.org/x/sys v0.28.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
 )
