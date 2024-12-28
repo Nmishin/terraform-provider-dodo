@@ -56,3 +56,4 @@ Changes to Outputs:
 
 You can apply this plan to save these new output values to the OpenTofu state, without changing any real infrastructure.
 ```
+
