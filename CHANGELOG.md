@@ -4,6 +4,10 @@ BREAKING CHANGES:
 
 * Breaking change added ([#26](https://github.com/Nmishin/terraform-provider-dodo/issues/26))
 
+NOTES:
+
+* Update readme.md ([#27](https://github.com/Nmishin/terraform-provider-dodo/issues/27))
+
 ENHANCEMENTS:
 
 * documentation: Updated README, updated info about tenv. ([#25](https://github.com/Nmishin/terraform-provider-dodo/issues/25))
