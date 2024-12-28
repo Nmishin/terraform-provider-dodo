@@ -1,4 +1,13 @@
 ## 0.0.8 (Unreleased)
+
+BREAKING CHANGES:
+
+* breaking-change ([#29](https://github.com/Nmishin/terraform-provider-dodo/issues/29))
+
+NOTES:
+
+* Update readme.md ([#28](https://github.com/Nmishin/terraform-provider-dodo/issues/28))
+
 ## 0.0.7 (Dec 28th, 2024)
 
 BREAKING CHANGES:
