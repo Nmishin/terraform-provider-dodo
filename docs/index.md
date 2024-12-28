@@ -29,4 +29,3 @@ export DODO_BASE_URL=https://...
 ### Optional
 
 - `url` (String) The Dodo Global API endpoint, can optionally be passed as `DODO_BASE_URL` environmental variable
-
