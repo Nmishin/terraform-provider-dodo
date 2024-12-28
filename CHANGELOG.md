@@ -1,4 +1,5 @@
-## 0.0.7 (Unreleased)
+## 0.0.8 (Unreleased)
+## 0.0.7 (Dec 28th, 2024)
 
 BREAKING CHANGES:
 
