@@ -8,6 +8,7 @@ It is a fully working solution. Uses [dodo-go](https://github.com/Nmishin/dodo-g
 __For more information about how to write a custom terraform provider, please check out my article:
 <br>[My Path for Terraform Provider Creation](https://hackernoon.com/my-path-for-terraform-provider-creation)__
 
+
 This terraform provider is available for both repositories: terraform and opentofu.
 
 Using the Provider
