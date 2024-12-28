@@ -1,5 +1,9 @@
 ## 0.0.6 (Unreleased)
 
+NOTES:
+
+* Update readme.md ([#23](https://github.com/Nmishin/terraform-provider-dodo/issues/23))
+
 ENHANCEMENTS:
 
 * documentation: Updated README, updated info about tenv. ([#18](https://github.com/Nmishin/terraform-provider-dodo/issues/18))
