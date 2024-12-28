@@ -9,7 +9,6 @@ __For more information about how to write a custom terraform provider, please ch
 <br>[My Path for Terraform Provider Creation](https://hackernoon.com/my-path-for-terraform-provider-creation)__
 
 
-
 This terraform provider is available for both repositories: terraform and opentofu.
 
 Using the Provider
