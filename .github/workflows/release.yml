@@ -28,8 +28,13 @@ jobs:
           path: release-notes.txt
           retention-days: 1
   goreleaser:
+    needs: [release-notes]
     runs-on: ubuntu-latest
     steps:
+      - name: Download Release Notes Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: release-notes
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Allow goreleaser to access older tag information.
@@ -49,7 +54,7 @@ jobs:
         with:
           distribution: goreleaser-pro
           version: "~> v2"
-          args: release --clean -f ${{ vars.GORELEASER_CONFIG_PATH }}
+          args: release --clean -f ${{ vars.GORELEASER_CONFIG_PATH }} --release-notes=release-notes.txt
         env:
           # GitHub sets the GITHUB_TOKEN secret automatically.
           DISABLE_CHANGELOG: ${{ vars.DISABLE_CHANGELOG}}
