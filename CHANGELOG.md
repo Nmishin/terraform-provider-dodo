@@ -1,4 +1,5 @@
-## 0.0.6 (Unreleased)
+## 0.0.7 (Unreleased)
+## 0.0.6 (Dec 28th, 2024)
 
 NOTES:
 
