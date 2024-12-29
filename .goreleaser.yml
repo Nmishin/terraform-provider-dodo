@@ -53,6 +53,8 @@ signs:
 changelog:
   disable: "{{ .Env.DISABLE_CHANGELOG }}"
 release:
+  discussion_category_name: Release
+  prerelease: auto
   extra_files:
     - glob: 'terraform-registry-manifest.json'
       name_template: '{{ .ProjectName }}_{{ .Version }}_manifest.json'
