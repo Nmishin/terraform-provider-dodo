@@ -22,7 +22,13 @@ jobs:
           # Allow goreleaser to access older tag information.
           fetch-depth: 0
       - name: Generate Release Notes
-        run: sed -n -e "1{/# /d;}" -e "2{/^$/d;}" -e "/# $(git describe --abbrev=0 --exclude="$(git describe --abbrev=0 --match='v*.*.*' --tags)" --match='v*.*.*' --tags | tr -d v)/q;p" CHANGELOG.md > release-notes.txt
+        run: |
+          PREV_TAG=$(git describe --abbrev=0 --exclude="$(git describe --abbrev=0 --match='v*.*.*' --tags)" --match='v*.*.*' --tags | tr -d v)
+          if grep -q $PREV_TAG CHANGELOG.md; then
+            sed -n -e "1{/# /d;}" -e "2{/^$/d;}" -e "/# $PREV_TAG/q;p" CHANGELOG.md > release-notes.txt
+          else
+            echo "Release tag not found in CHANGELOG.md" > release-notes.txt
+          fi
       - uses: actions/setup-go@0c52d547c9bc32b1aa3301fd7a9cb496313a4491 # v5.0.0
         with:
           go-version-file: 'go.mod'
