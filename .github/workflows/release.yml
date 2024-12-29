@@ -27,7 +27,7 @@ jobs:
           if grep -q $PREV_TAG CHANGELOG.md; then
             sed -n -e "1{/# /d;}" -e "2{/^$/d;}" -e "/# $PREV_TAG/q;p" CHANGELOG.md > release-notes.txt
           else
-            echo "Release tag not found in CHANGELOG.md" > release-notes.txt
+            echo "Previous release tag not found in CHANGELOG.md" > release-notes.txt
           fi
       - uses: actions/setup-go@0c52d547c9bc32b1aa3301fd7a9cb496313a4491 # v5.0.0
         with:
