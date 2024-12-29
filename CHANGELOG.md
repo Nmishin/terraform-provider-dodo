@@ -1,4 +1,16 @@
-## 0.0.9 (Unreleased)
+## 0.0.10 (Unreleased)
+BREAKING CHANGES:
+
+* Breaking change added ([#26](https://github.com/Nmishin/terraform-provider-dodo/issues/26))
+
+NOTES:
+
+* Update readme.md ([#27](https://github.com/Nmishin/terraform-provider-dodo/issues/27))
+
+ENHANCEMENTS:
+
+* documentation: Updated README, updated info about tenv. ([#25](https://github.com/Nmishin/terraform-provider-dodo/issues/25))
+## 0.0.9 (Dec 29th, 2024)
 BREAKING CHANGES:
 
 * breaking-change ([#29](https://github.com/Nmishin/terraform-provider-dodo/issues/29))
