@@ -1,4 +1,14 @@
 ## 0.1.0 (Unreleased)
+BREAKING CHANGES:
+* test
+
+NOTES:
+
+* Update readme.md
+## 0.0.11-beta4 (December 29, 2024)
+BREAKING CHANGES:
+
+* Breaking change added ([#26](https://github.com/Nmishin/terraform-provider-dodo/issues/26))
 ## 0.0.11 (December 29, 2024)
 BREAKING CHANGES:
 
