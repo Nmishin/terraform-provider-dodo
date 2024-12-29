@@ -1,4 +1,5 @@
-## 0.0.10 (Unreleased)
+## 0.1.0 (Unreleased)
+## 0.0.10 (December 29, 2024)
 BREAKING CHANGES:
 
 * Breaking change added ([#26](https://github.com/Nmishin/terraform-provider-dodo/issues/26))
