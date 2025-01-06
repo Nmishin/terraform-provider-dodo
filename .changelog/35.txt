@@ -1,0 +1,3 @@
+```release-note:dependency
+provider: Bump the go_modules group across 1 directory with 2 updates
+```
