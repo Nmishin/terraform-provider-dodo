@@ -1,0 +1,3 @@
+```release-note:dependency
+provider: Bump github.com/cloudflare/circl from 1.3.7 to 1.6.1 in /tools in the go_modules group across 1 directory
+```
